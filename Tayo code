@@ -1,0 +1,58 @@
+public class StudentStatusChecker {
+    public static void main(String[] args) {
+//Change Values According to the Answer or output you want//
+int n = 20;
+int a = 5;
+int b = 10;
+int c = 7;
+int score = 75;
+int num1 = 15;
+int num2 = 3;
+char operand = '/';
+char end = '?';
+
+//Input Value names in the () down below//
+switch(){
+    case 20: System.out.println("Even or Odd?: " + n);{
+        if (n % 2 == 0) System.out.println("Number is even");
+        else System.out.println("Number is odd");
+    }
+    break;
+    case 10:
+    case 5:
+    case 7: System.out.println("Greater Number of the three?: " + a + (',') + b + (',') + c);
+        if (a > b && a > c) System.out.println("A Is Greatest");
+        else if(b > a && b > c) System.out.println("B is Greatest");
+        else System.out.println("C is Greatest");
+        break;
+
+    case 75: System.out.println("Grade Calculator; " + ("input grade: " + score));
+    if ( score>= 90 && score <= 100) {
+        System.out.println("A");}
+    else if (score >= 80 && score < 90) {
+            System.out.println("B");
+        } else if (score >= 70 && score < 80) {
+            System.out.println("C");
+        } else if (score >= 60 && score < 70) {
+            System.out.println("D");
+        } else if (score < 60) {
+            System.out.println("F");
+        }
+    break;
+
+    case '+': System.out.println("Simple Calculator"); System.out.println("Answer is: " + (num1 + num2)); break;
+    case '-': System.out.println("Simple Calculator"); System.out.println("Answer is: " + (num1 - num2)); break;
+    case '*': System.out.println("Simple Calculator"); System.out.println("Answer is: " + (num1 * num2)); break;
+    case '/': System.out.println("Simple Calculator"); if (num2 != 0)
+    {System.out.println("Answer is: " + (num1 / num2)); break;}
+        else {System.out.println("Error"); break;}
+    default: System.out.println("Invalid"); break;
+
+    case '?': System.out.println("Exit: "); System.out.println("Goodbye!"); break;
+    }
+}
+
+
+
+
+    }
